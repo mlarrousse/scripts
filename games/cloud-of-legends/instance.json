@@ -1,0 +1,89 @@
+// Gotta be in us-west2-c for C2 and GPU
+// LQ>G~D!&8x.V)v=
+{
+    "canIpForward": false,
+    "cpuPlatform": "Unknown CPU Platform",
+    "deletionProtection": false,
+    "description": "play games",
+    "disks": [
+      {
+        "autoDelete": true,
+        "boot": true,
+        "deviceName": "league-runner",
+        "diskSizeGb": "50",
+        "guestOsFeatures": [
+          {
+            "type": "WINDOWS"
+          },
+          {
+            "type": "MULTI_IP_SUBNET"
+          },
+          {
+            "type": "VIRTIO_SCSI_MULTIQUEUE"
+          }
+        ],
+        "index": 0,
+        "interface": "SCSI",
+        "kind": "compute#attachedDisk",
+        "licenses": [
+          "projects/windows-cloud/global/licenses/windows-server-2019-dc"
+        ],
+        "mode": "READ_WRITE",
+        "type": "PERSISTENT"
+      }
+    ],
+    "displayDevice": {
+      "enableDisplay": false
+    },
+    "id": "232043590373485481",
+    "kind": "compute#instance",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "machineType": "projects/silent-space-421/zones/us-west1-a/machineTypes/n1-standard-2",
+    "metadata": {
+      "fingerprint": "-V4KopkTvgc=",
+      "kind": "compute#metadata"
+    },
+    "name": "league-runner",
+    "networkInterfaces": [
+      {
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "name": "External NAT",
+            "natIP": "34.82.210.59",
+            "networkTier": "PREMIUM",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ],
+        "fingerprint": "r7Hpx4-1DkQ=",
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "networkIP": "10.240.0.2"
+      }
+    ],
+    "reservationAffinity": {
+      "consumeReservationType": "ANY_RESERVATION"
+    },
+    "scheduling": {
+      "automaticRestart": true,
+      "onHostMaintenance": "MIGRATE",
+      "preemptible": false
+    },
+    "serviceAccounts": [
+      {
+        "scopes": [
+          "https://www.googleapis.com/auth/devstorage.read_only",
+          "https://www.googleapis.com/auth/logging.write",
+          "https://www.googleapis.com/auth/monitoring.write",
+          "https://www.googleapis.com/auth/servicecontrol",
+          "https://www.googleapis.com/auth/service.management.readonly",
+          "https://www.googleapis.com/auth/trace.append"
+        ]
+      }
+    ],
+    "startRestricted": false,
+    "status": "STAGING",
+    "tags": {
+      "fingerprint": "42WmSpB8rSM="
+    }
+  }

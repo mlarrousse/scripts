@@ -1,0 +1,9 @@
+{
+  "inputUri": "gs://eventually-wf-ml/labels/video1.labels",
+  "features": ["TEXT_DETECTION"],
+  "videoContext": {
+    "textDetectionConfig": {
+      "languageHints": ["en-us"]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+### DOCKER ###
+sudo apt-get update
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable"
+
+sudo apt-get update
+
+sudo apt-get install docker-ce
+
+### GCLOUD ###
+
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+
+sudo apt-get install apt-transport-https ca-certificates gnupg
+
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+sudo apt-get update && sudo apt-get install google-cloud-sdk
+
+### GCLOUD PROJECT ###
+# This is hella weird - it'll open up a browser
+gcloud auth application-default login
+
+gcloud config set project eventually-tools
+
+## Probs need gsutil in here
