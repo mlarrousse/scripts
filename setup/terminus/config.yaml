@@ -1,0 +1,57 @@
+terminal:
+  colorScheme:
+    name: cyberpunk
+    foreground: '#c592ff'
+    background: '#372963 '
+    cursor: '#d5d5d5'
+    colors:
+      - '#FF4081'
+      - '#be2d26'
+      - '#1a9172'
+      - '#00FF9C'
+      - '#325d96'
+      - '#8a5edc'
+      - '#35a08f'
+      - '#23d183'
+      - '#336889'
+      - '#dd5944'
+      - '#31d07b'
+      - '#e7d84b'
+      - '#34a6da'
+      - '#ae6bdc'
+      - '#42c3ae'
+      - '#d5d5d5'
+  environment: {}
+  profile: wsl-/-ubuntu
+  customColorSchemes:
+    - name: cyberpunk
+      foreground: '#c592ff'
+      background: '#372963 '
+      cursor: '#d5d5d5'
+      colors:
+        - '#FF4081'
+        - '#be2d26'
+        - '#1a9172'
+        - '#00FF9C'
+        - '#325d96'
+        - '#8a5edc'
+        - '#35a08f'
+        - '#23d183'
+        - '#336889'
+        - '#dd5944'
+        - '#31d07b'
+        - '#e7d84b'
+        - '#34a6da'
+        - '#ae6bdc'
+        - '#42c3ae'
+        - '#d5d5d5'
+hotkeys:
+  shell: {}
+  profile: {}
+  paste:
+    - - Ctrl-V
+  copy:
+    - - Ctrl-C
+serial: {}
+ssh: {}
+appearance: {}
