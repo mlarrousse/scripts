@@ -45,6 +45,7 @@ terminal:
         - '#ae6bdc'
         - '#42c3ae'
         - '#d5d5d5'
+  background: colorScheme
 hotkeys:
   shell: {}
   profile: {}
