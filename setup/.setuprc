@@ -33,3 +33,10 @@ gcloud auth application-default login
 gcloud config set project eventually-tools
 
 ## Probs need gsutil in here
+
+### GOLANG ###
+wget https://golang.org/dl/go1.15.3.linux-amd64.tar.gz -o go.tar.gz
+tar -C /usr/local -xzf go.tar.gz
+
+### KUSTOMIZE ###
+GOBIN=$(pwd)/ GO111MODULE=on go get sigs.k8s.io/kustomize/kustomize/v3
