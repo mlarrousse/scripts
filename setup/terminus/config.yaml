@@ -1,7 +1,7 @@
 terminal:
   colorScheme:
     name: cyberpunk
-    foreground: '#c592ff'
+    foreground: '#c5c2ff'
     background: '#372963 '
     cursor: '#d5d5d5'
     colors:
@@ -25,7 +25,7 @@ terminal:
   profile: wsl-/-ubuntu
   customColorSchemes:
     - name: cyberpunk
-      foreground: '#c592ff'
+      foreground: '#c5c2ff'
       background: '#372963 '
       cursor: '#d5d5d5'
       colors:
