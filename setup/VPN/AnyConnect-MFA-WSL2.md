@@ -8,7 +8,7 @@ There's a lot of helpful information out there, but I had not seen a complete gu
 1. https://github.com/microsoft/WSL/issues/4285#issuecomment-522201021
 
 ## Installing AnyConnect (First time Setup)
-If you don't have the AnyConnect standalone client already, talk to your software provisioning department. As far as I can tell the client's arent available for direct download without a lisence.
+If you don't have the AnyConnect standalone client already, talk to your software provisioning department. As far as I can tell the clients aren't available for direct download without a lisence.
 
 ## WSL2 resolv.conf ( first time setup )
 Lets start getting things working OFF VPN first, then we'll add it into the mix later.
