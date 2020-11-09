@@ -131,3 +131,11 @@ function start_agent {
                     else
                                 start_agent
                 fi
+
+if [ -f ~/.bashrc.kube ]; then
+    source ~/.bashrc.kube
+fi
+
+if [ -f ~/.bashrc.golang ]; then
+    source ~/.bashrc.golang
+fi
