@@ -4,7 +4,8 @@ sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
-    software-properties-common
+    software-properties-common \
+    jq
 
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 
