@@ -45,3 +45,6 @@ GOBIN=$(pwd)/ GO111MODULE=on go get sigs.k8s.io/kustomize/kustomize/v3
 ### AWS ###
 # https://media.giphy.com/media/13944mhZqYqABa/giphy.gif
 apt install awscli
+
+### Azure ###
+apt-get install azure-cli
