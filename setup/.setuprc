@@ -48,3 +48,8 @@ apt install awscli
 
 ### Azure ###
 apt-get install azure-cli
+
+### Gitlab Runner ###
+curl -LJO https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb
+dpkg -i gitlab-runner_amd64.deb
+
