@@ -72,5 +72,7 @@ The document has moved
 > NOTE: If you're usng something else to test like ping or tracepath, be aware that many organizations block certain traffic types over their VPN and these may not work.
 
 
+## Addendum
 
-
+### Terraform
+Terraform's DNS behavior seems a bit whacky. If you're unable to pull providers during `terraform init`, you may need to temporarily re-arrange your /etc/resolv.conf to have a public DNS server as the first entry.
