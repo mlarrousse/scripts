@@ -57,3 +57,8 @@ dpkg -i gitlab-runner_amd64.deb
 ### mikefarah yq ###
 wget https://github.com/mikefarah/yq/releases/download/3.4.1/yq_linux_amd64 -O /usr/bin/yq &&\
     chmod +x /usr/bin/yq
+    
+### taskell ###
+sudo apt install libncurses5
+wget https://github.com/smallhadroncollider/taskell/releases/download/1.10.1/taskell-1.10.1_x86-64-linux.deb
+sudo dpkg -i  taskell-1.10.1_x86-64-linux.deb
