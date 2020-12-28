@@ -28,6 +28,9 @@ wget https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.19.0/cric
 tar -xvf crictl-v1.19.0-linux-amd64.tar.gz -C /usr/local/bin
 rm crictl-v1.19.0-linux-amd64.tar.gz
 
+# generate crictl config & set to use containerd
+sudo crictl config --set runtime-endpoint=unix:///run/containerd/containerd.sock
+
 ### GCLOUD ###
 
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
