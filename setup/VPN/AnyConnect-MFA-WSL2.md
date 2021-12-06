@@ -76,3 +76,12 @@ The document has moved
 
 ### Terraform
 Terraform's DNS behavior seems a bit whacky. If you're unable to pull providers during `terraform init`, you may need to temporarily re-arrange your /etc/resolv.conf to have a public DNS server as the first entry.
+
+### Post-restart
+Sometimes post restart you'll get errors starting wsl, I run the following in powershell, then re-connect to VPN & re-run the netadapter steps. Sometimes that still doesn't work, in which case I reboot again.
+```
+wsl.exe --shutdown
+restart-service vmms
+restart-service vmcompute
+
+```
